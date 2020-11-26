@@ -1,0 +1,87 @@
+[Buildset]
+BuildItems=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x01\x00\x00\x00\x0b\x00\x00\x00\x00\x01\x00\x00\x00.\x00C\x00h\x00e\x00e\x00t\x00a\x00h\x00-\x00S\x00o\x00f\x00t\x00w\x00a\x00r\x00e\x00-\x00m\x00a\x00s\x00t\x00e\x00r)
+
+[CMake]
+Build Directory Count=4
+Current Build Directory Index=3
+Current Build Directory Index-Host System=1
+ProjectRootRelative=./
+
+[CMake][CMake Build Directory 0]
+Build Directory Path=file:///home/user/Cheetah-Software-master/build
+Build Type=
+CMake Binary=file:///usr/bin/cmake
+Environment Profile=
+Extra Arguments=
+Install Directory=file:///usr/local
+Runtime=Host System
+
+[CMake][CMake Build Directory 1]
+Build Directory Path=/home/zj-robot/MIT_demo/MIT/Cheetah-Software-master/build
+Build Type=
+CMake Binary=/usr/bin/cmake
+CMake Executable=/usr/bin/cmake
+Environment Profile=
+Extra Arguments=
+Install Directory=/usr/local
+Runtime=Host System
+
+[CMake][CMake Build Directory 2]
+Build Directory Path=file:///home/ZJ/I_DAI/Cheetah-Software-master/build
+Build Type=
+CMake Binary=file:///usr/bin/cmake
+Environment Profile=
+Extra Arguments=
+Install Directory=file:///usr/local
+
+[CMake][CMake Build Directory 3]
+Build Directory Path=file:///home/ZJ/Cheetah-Software-master-dai_down/build
+Build Type=
+CMake Binary=file:///usr/bin/cmake
+Environment Profile=
+Extra Arguments=
+Install Directory=file:///usr/local
+
+[Defines And Includes][Compiler]
+Name=GCC
+Path=gcc
+Type=GCC
+
+[Launch]
+Launch Configurations=Launch Configuration 0,Launch Configuration 1
+
+[Launch][Launch Configuration 0]
+Configured Launch Modes=execute
+Configured Launchers=nativeAppLauncher
+Name=run
+Type=Native Application
+
+[Launch][Launch Configuration 0][Data]
+Arguments=m s
+Dependencies=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x00)
+Dependency Action=Nothing
+EnvironmentGroup=
+Executable=file:///home/zj-robot/MIT_demo/MIT/Cheetah-Software-master/build/user/MIT_Controller/mit_ctrl
+External Terminal=konsole --noclose --workdir %workdir -e %exe
+Project Target=Cheetah-Software-master,sim,sim
+Use External Terminal=false
+Working Directory=
+isExecutable=false
+
+[Launch][Launch Configuration 1]
+Configured Launch Modes=execute
+Configured Launchers=nativeAppLauncher
+Name=sim
+Type=Native Application
+
+[Launch][Launch Configuration 1][Data]
+Arguments=
+Dependencies=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x00)
+Dependency Action=Nothing
+EnvironmentGroup=
+Executable=file:///home/zj-robot/MIT_demo/MIT/Cheetah-Software-master/build/sim/sim
+External Terminal=konsole --noclose --workdir %workdir -e %exe
+Project Target=Cheetah-Software-master,common,test-common
+Use External Terminal=false
+Working Directory=
+isExecutable=true
