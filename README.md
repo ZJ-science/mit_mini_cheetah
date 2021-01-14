@@ -1,3 +1,15 @@
+1.添加了趴下模式和恢复站立模式
+2.解决了rc遥控器的通问题。
+3.添加了自启动功能
+4.更改了膝关节同步带结构，改成平行四边形机构，并驱动成功、
+
+以上工作部分是自己新加的（以上趴下模式、第2,3小点），部分是参考新版开源代码（如恢复站立模式）
+
+第四点是在多次理解代码、阅读代码之后做到的
+
+
+
+
 ## Cheetah-Software
 This repository contains the Robot and Simulation software project.  For a getting started guide, see the documentation folder.
 
